@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <form>
+        <!-- first name -->
+        <div>
+            <label for="firstName">First name</label>
+            <input id="firstName" type="text" placeholder="First name" required>
+        </div>
+        <!-- last name -->
+        <div>
+            <label for="LastName">Last name</label>
+            <input id="LastName" type="text" placeholder="Last name" required>
+        </div>
+        <!-- email -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" >
+        </div>
+        <!-- username -->
+        <div>
+            <label for="userName">Username</label>
+            <input id="userName" type="text" required placeholder="Username">
+        </div>
+        <!-- password -->
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" required minlength="10" placeholder="Password">
+        </div>
+        <!-- birth date -->
+        <div>
+            <label for="birthDate">Birth date</label>
+            <input id="birthDate" type="date" required>
+        </div>
+        <!-- how happy are you -->
+        <div>
+            <label for="happy">How happy are you?</label>
+            <input id="happy" type="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+            <!-- range 스타일 참고자료 : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range -->
+        </div>
+        <!-- fav.color -->
+        <div>
+            <label for="color">What is your fav.color?</label>
+            <input type="color" id="color">
+        </div>
+        <!-- button -->
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+</html>
